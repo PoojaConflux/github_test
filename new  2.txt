@@ -1,0 +1,69 @@
+ 
+ 
+ 
+ 
+             <tr>  
+           <% if (cand == null) { %>     
+           
+           <td width="20%" id="left_align_noborder">Joining Location afterSave</td>
+                <td width="20%" id="left_align_noborder">
+               <% if (candJoiningLoc != null) { %>
+                    <%=candJoiningLoc%>
+               <% } %>
+                 <html:hidden property="invConNo" name="InvoiceForm" value="<%=candJoiningLoc%>"/>
+                </td>
+           <% } %>
+          </tr> 
+            
+			& blocks and villages of Haryana
+			
+			
+			
+			
+			
+			
+			 <tr>  
+           <% if (cand == null) { %>     
+           
+           <td width="25%" id="left_align_noborder">Joining Location afterSave</td>
+                <td width="25%" id="left_align_noborder">
+                    
+               <% if (cancelStatus.equals("no")) { %>
+                        <html:text onchange="javascript:formChanged()" property="candJoiningLocation" name="InvoiceForm" size="12"
+                                   maxlength="12" style="font-size:8pt" value="<%=candJoiningLoc%>" disabled="true"/>
+                     <% } else { %>
+                        <html:text onchange="javascript:formChanged()" property="candJoiningLocation" name="InvoiceForm" size="12"
+                                   maxlength="12" style="font-size:8pt" value="<%=candJoiningLoc%>"/>
+                     <% } %>
+                 
+                </td>
+           <% } %>
+          </tr> 
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  clientContact                    InvoiceForm         aaa.label.invoice.invoiceType      aaa.label.invoice.clientContact
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  aaa.label.invoice.invChargeType= Invoice Type            aaa.label.invoice.invoiceType=Invoice type
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
